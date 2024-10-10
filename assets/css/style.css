@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.before-and-after-one {
+  position: relative;
+  &::after {
+    content: '';
+    width: 90%;
+    height: 2px;
+    top: 0;
+
+    background: linear-gradient(to left, #141315, #ffffff, #eaeaea, #141315);
+    position: absolute;
+    z-index: 99;
+  }
+  &::before {
+    content: '';
+    width: 90%;
+    height: 2px;
+    bottom: 0;
+    background: linear-gradient(to left, #141315, #ffffff, #eaeaea, #141315);
+    position: absolute;
+    z-index: 99;
+  }
+}
+
+.before-and-after-two {
+  position: relative;
+  &::after {
+    content: '';
+    width: 1px;
+    height: 350px;
+    left: 0;
+    top: -60px;
+    background: linear-gradient(to top, #141315, #ffffff, #eaeaea, #141315);
+    position: absolute;
+    z-index: 99;
+ 
+  }
+  &::before {
+    content: '';
+    width: 1px;
+    height: 350px;
+    right: 0;
+    top: -60px;
+    background: linear-gradient(to top, #141315, #ffffff, #eaeaea, #141315);
+    position: absolute;
+    z-index: 99;
+  }
+}
+
+.before-and-after-three {
+  position: relative;
+  &::after {
+    content: '';
+    width: 90%;
+    height: 1px;
+    opacity: 30%;
+    top: 0;
+    left: 5%;
+    background: linear-gradient(to left, #141315, #ffffff, #eaeaea, #141315);
+    position: absolute;
+    z-index: 99;
+  }
+  &::before {
+    content: '';
+    width: 90%;
+    height: 1px;
+    bottom: 0;
+    left: 5%;
+    opacity: 30%;
+    background: linear-gradient(to left, #141315, #ffffff, #eaeaea, #141315);
+    position: absolute;
+    z-index: 99;
+  }
+}
+
+
+.before-and-after-four {
+  position: relative;
+  &::after {
+    content: '';
+    width: 300px;
+    height: 1px;
+    top: 0;
+    right: 0;
+    background: linear-gradient(to left, #141315, #ffffff, #eaeaea, #141315);
+    position: absolute;
+
+  }
+  &::before {
+    content: '';
+    width: 300px;
+    height: 1px;
+    bottom: 0;
+    background: linear-gradient(to left, #141315, #ffffff, #eaeaea, #141315);
+    position: absolute;
+
+  }
+}
+
+.kisuakta {
+  -webkit-box-shadow: inset 2px 200px 219px -111px rgba(103, 14, 191, 0.98);
+  -moz-box-shadow: inset 2px 200px 219px -111px rgba(103, 14, 191, 0.98);
+  box-shadow: inset 2px 200px 219px -111px rgba(103, 14, 191, 0.98);
+}
