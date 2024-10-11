@@ -18,14 +18,14 @@ cancelIcon.addEventListener('click', () => {
 let animation = ScrollReveal({
   origin: 'top',
   distance: '60px',
-  duration: 2000,
-  delay: 500,
+  duration: 1000,
+  delay: 300,
   reset: true
 })
 
 animation.reveal('.animation-one');
 animation.reveal('.animation-two', {
-  delay: 500,
+  delay: 300,
   scale: 0.05,
   duration: 1000
 });
